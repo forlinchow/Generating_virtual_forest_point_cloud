@@ -9,7 +9,6 @@ border_y=50;
 cover_rate=0.95;
 gridsize=2.5;
 coniferous_rate=1;
-
 [FileNameGet,PathName]=uigetfile({'*.csv';'*.txt'},'select Coniferous sample','MultiSelect','on');  
 if ~isequal(FileNameGet,0)   
     if iscell(FileNameGet)   
@@ -22,8 +21,7 @@ if ~isequal(FileNameGet,0)
 			clear temp
         end  
     else  
-        nFile=1;   
-          
+        nFile=1; 
     end  
 else   
     disp('no select.');   
@@ -41,8 +39,7 @@ if ~isequal(FileNameGet,0)
 			clear temp	
         end  
     else  
-        nFile=1;  
-          
+        nFile=1; 
     end  
 else  
     disp('no select.');  
